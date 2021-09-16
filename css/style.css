@@ -1,0 +1,34 @@
+*{
+    --main-color:#0077b6;
+    --dark-color:#023E8A;
+
+}
+
+
+header{
+background-color: var(--main-color);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo-container{
+    background-color: white;
+    border-radius: 50%;
+}
+
+.logo-container img{
+    width: 50px;
+    height: 50px;
+
+}
+
+.btn-container button{
+    background-color: var(--main-color);
+    color: black;
+}
+
+.btn-container button:hover{
+    background-color: var(--dark-color);
+    color: white;
+}

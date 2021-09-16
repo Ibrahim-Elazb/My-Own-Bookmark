@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login_register.css">
+
+    <script src="script/bootstrap.bundle.min.js" defer></script>
+    <script src="script/login.js" defer></script>
+</head>
+<body>
+    <section  class="w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="container w-50">
+            <div id="login-section" class="p-4">
+                <div class="logo-container mt-2 mb-4">
+                    <img src="images/Bookmark.png" alt="logo">
+                </div>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div id="error-msg" class="alert-danger rounded-1 p-1 text-center d-none">UserName or Password is wrong</div>
+                    <div>
+                      <label for="user-name-input" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="user-name-input" placeholder="Enter User Name"  required>
+                        <div class="invalid-feedback alert-danger  rounded-1 p-1">
+                          Please, Enter User Name
+                        </div>
+                    </div>
+                    <div>
+                        <label for="password-input" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password-input" placeholder="Enter Password" required>
+                        <div class="invalid-feedback alert-danger  rounded-1 p-1">
+                          Please Enter password
+                        </div>
+                      </div>
+                    <div class="col-12">
+                      <button id="login-btn" class="btn" type="submit">login</button>
+                    </div>
+                    <div class="col-12 text-center">
+                        I don't have an account  
+                        <a href="register.html" class="text-decoration-none text-light">
+                            <strong>Register</strong>
+                        </a>
+                      </div>
+                  </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

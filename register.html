@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Page</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login_register.css">
+
+    <script src="script/bootstrap.bundle.min.js" defer></script>
+    <script src="script/register.js" defer></script>
+</head>
+<body>
+<section  class="w-100 d-flex justify-content-center align-items-center my-5">
+    <div class="container w-50">
+        <div id="register-section" class="p-lg-4 p-2">
+            <div class="logo-container mt-2 mb-4">
+                <img src="images/Bookmark.png" alt="logo">
+            </div>
+            <form id="form-container" class="row g-3 needs-validation" novalidate>
+                <div class="col-lg-6 col-12">
+                  <label for="first-name-input" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="first-name-input" placeholder="Enter First Name" required>
+                  <div class="invalid-feedback alert-danger p-1 rounded-1">
+                    Please Enter Your First Name
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <label for="last-name-input" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="last-name-input" placeholder="Enter Last Name" required>
+                    <div class="invalid-feedback alert-danger p-1 rounded-1">
+                      Please Enter Your Last Name
+                    </div>
+                </div>
+                <div>
+                  <label for="user-name-input" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="user-name-input" placeholder="Enter User Name"  required>
+                    <div class="invalid-feedback alert-danger p-1 rounded-1">
+                      Already Exist
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <label for="password-input" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password-input" placeholder="Enter Password" required>
+                    <div class="invalid-feedback alert-danger p-1 rounded-1">
+                      Please Enter password
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-12">
+                      <label for="confirm-password-input" class="form-label">Confirm Password</label>
+                      <input type="password" class="form-control" id="confirm-password-input" placeholder="Confirm Password" required>
+                      <div class="invalid-feedback alert-danger p-1 rounded-1">
+                        Not Identical Password
+                      </div>
+                  </div>
+                <div>
+                    <label for="email-input" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email-input" placeholder="Enter Email"  required>
+                      <div class="invalid-feedback alert-danger p-1 rounded-1">
+                        Invalid Email
+                      </div>
+                </div>
+                <div>
+                    <label for="mobile-input" class="form-label">EG Mobile</label>
+                      <input type="tel" class="form-control" id="mobile-input" placeholder="Enter Mobile Number"  required>
+                      <div class="invalid-feedback alert-danger p-1 rounded-1">
+                        Invalid Mobile Number
+                      </div>
+                </div>
+                <div class="col-12">
+                  <label for="gender-choose" class="form-label">Gender</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="male-choice" value="male" checked>
+                    <label class="form-check-label" for="male-choice">
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="female-choice" value="female">
+                    <label class="form-check-label" for="female-choice">
+                      Female
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button id="Register-btn" class="btn" type="submit">Register</button>
+                </div>
+                <div class="col-12 text-center">
+                    I Already have an account  
+                    <a href="login.html" class="text-decoration-none text-light">
+                        <strong>Login</strong>
+                    </a>
+                  </div>
+              </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>

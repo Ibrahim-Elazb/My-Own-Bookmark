@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMarks Page</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="script/bootstrap.bundle.min.js" defer></script>
+    <script src="script/mainScript.js" defer></script>
+</head>
+<body>
+    <header class="w-100 px-5 py-3 mb-5">
+        <div class="logo-container">
+            <img src="images/Bookmark.png" alt="Logo">
+        </div>
+        <div class="logIn-info">
+             <i class="fas fa-user p-2 rounded-circle bg-white me-2"></i>
+             <div class="d-inline-block p-2 me-2">Welcome, <span id="username-container"></span></div>
+             <button id="sign-out-btn" class="btn text-light">Sign Out</button>
+        </div>
+    </header>
+
+<section class="bookmark-section">
+    <div class="container-md">
+        <form class="mb-5 needs-validation" novalidate>
+            <div class="mb-4">
+                <label for="bookmark-url" class="form-label mb-2">Bookmark URL</label>
+                <input type="text" id="bookmark-url" class="form-control" required>
+                <div class="invalid-feedback">Please, Enter Valid URL</div>
+            </div>
+            <div class="mb-4">
+                <label for="bookmark-name"  class="form-label mb-2">Bookmark Name</label>
+                <input type="text" id="bookmark-name" class="form-control" required>
+                <div class="invalid-feedback">Enter Name For the Bookmarked Link</div>
+            </div>
+            <div class="btn-container">
+                <button id="add-bookmark" class="btn">Add Bookmark</button>
+                <button id="confirm-update" class="btn d-none">Update Bookmark</button>
+                <button id="clr-inputs" class="btn">Clear</button>
+            </div>
+        </form>
+
+        <div class="bookmark-display">
+            <table class="table table-striped">
+                <thead class="bg-info">
+                    <tr>
+                        <th scope="col">index</th>
+                        <th scope="col">Bookmark Name</th>
+                        <th scope="col">Bookmark URL</th>
+                        <th scope="col">Update <i class="fas fa-edit"></i></th>
+                        <th scope="col">Delete <i class="fas fa-trash-alt"></i></th>
+                    </tr>
+                </thead>
+                <tbody id="bookmark-content">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+</body>
+</html>
