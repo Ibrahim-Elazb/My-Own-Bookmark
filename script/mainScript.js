@@ -162,21 +162,20 @@ SignOutBtn.addEventListener("click",function(){
     sessionStorage.clear();
     setTimeout(() => {
         window.location="login.html";
-    }, 1000);
+    }, 100);
 })
 
 //------------------------  During Window onload --------------------------------//
 function init(){
     if(isLoggedIn()){
-        console.log("isLoggedIn");
         loggedUser=JSON.parse(sessionStorage.getItem("loginUser"));
-        userNameContainer.innerText=loggedUser.userName;
+        userNameContainer.innerHTML=`<strong>${loggedUser.userName}</strong>`;
         displayBookmarkUI(getUserBKList(loggedUser.userName));
         clearInput();
     }else{
         setTimeout(() => {
             window.location="login.html";
-        }, 1000);
+        }, 100);
     }
 }
 

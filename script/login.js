@@ -42,10 +42,14 @@ loginBtn.addEventListener("click",function(event){
     if(checkIfInputEmpty(userNameInput)&&checkIfInputEmpty(passwordInput)){
         const usersList=JSON.parse(localStorage.getItem("userDB"));
         const user=usersList.find(item=>item.userName.toLowerCase()===userNameInput.value.trim().toLowerCase() && item.password===passwordInput.value.trim())
-        sessionStorage.setItem("loginUser",JSON.stringify(user));
-        setTimeout(() => {
-            window.location="index.html";
-        }, 1000);
+        if(user){
+            sessionStorage.setItem("loginUser",JSON.stringify(user));
+            setTimeout(() => {
+                window.location="index.html";
+            }, 100);
+        }else{
+            errorMsgEl.classList.remove("d-none");
+        }
     }
 
 })

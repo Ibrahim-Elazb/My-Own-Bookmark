@@ -109,181 +109,41 @@ lastNameInput.addEventListener("input",function(){
 // User Name input Validation
 userNameInput.addEventListener("blur",function(){
     checkInputValidity(userNameInput,checkUserNameValid,"You Should Enter User Name","Already Exist");
-    // if(userNameInput.value){
-    //     if(checkUserNameValid()){
-    //         userNameInput.classList.add("is-valid");
-    //         userNameInput.classList.remove("is-invalid");
-    //     }else{
-    //         userNameInput.nextElementSibling.innerText="Already Exist";
-    //         userNameInput.classList.remove("is-valid");
-    //         userNameInput.classList.add("is-invalid");
-    //     }
-    // }else{
-    //     userNameInput.nextElementSibling.innerText="You Should Enter User Name";
-    //     userNameInput.classList.remove("is-valid");
-    //     userNameInput.classList.add("is-invalid");
-    // }
 })
 userNameInput.addEventListener("input",function(){
     checkInputValidity(userNameInput,checkUserNameValid,"You Should Enter User Name","Already Exist");
-    // if(userNameInput.value){
-    //     if(checkUserNameValid()){
-    //         userNameInput.classList.add("is-valid");
-    //         userNameInput.classList.remove("is-invalid");
-    //     }else{
-    //         userNameInput.nextElementSibling.innerText="Already Exist";
-    //         userNameInput.classList.remove("is-valid");
-    //         userNameInput.classList.add("is-invalid");
-    //     }
-    // }else{
-    //     userNameInput.nextElementSibling.innerText="You Should Enter User Name";
-    //     userNameInput.classList.remove("is-valid");
-    //     userNameInput.classList.add("is-invalid");
-    // }
 })
 
 // Password input Validation
 passwordInput.addEventListener("blur",function(){
     checkInputValidity(passwordInput,checkPasswordValid,"You Should Enter Password","At least 8 contains a number, a special character (!@#$%^&*?), a small character, a Capital character");
-    // if(passwordInput.value){
-    //     if(checkPasswordValid()){
-    //         passwordInput.classList.add("is-valid");
-    //         passwordInput.classList.remove("is-invalid");
-    //     }else{
-    //         passwordInput.nextElementSibling.innerText="At least 8 contains a number, a special character (!@#$%^&*?), a small character, a Capital character";
-    //         passwordInput.classList.remove("is-valid");
-    //         passwordInput.classList.add("is-invalid");
-    //     }
-    // }else{
-    //     passwordInput.nextElementSibling.innerText="You Should Enter Password";
-    //     passwordInput.classList.remove("is-valid");
-    //     passwordInput.classList.add("is-invalid");
-    // }
 })
 passwordInput.addEventListener("input",function(){
     checkInputValidity(passwordInput,checkPasswordValid,"You Should Enter Password","At least 8 contains a number, a special character (!@#$%^&*?), a small character, a Capital character");
-    // if(passwordInput.value){
-    //     if(checkPasswordValid()){
-    //         passwordInput.classList.add("is-valid");
-    //         passwordInput.classList.remove("is-invalid");
-    //     }else{
-    //         passwordInput.nextElementSibling.innerText="At least 8 contains a number, a special character (!@#$%^&*?), a small character, a Capital character";
-    //         passwordInput.classList.remove("is-valid");
-    //         passwordInput.classList.add("is-invalid");
-    //     }
-    // }else{
-    //     passwordInput.nextElementSibling.innerText="You Should Enter Password";
-    //     passwordInput.classList.remove("is-valid");
-    //     passwordInput.classList.add("is-invalid");
-    // }
 })
 
 // Confirm Password input Validation
 cfmPasswordInput.addEventListener("blur",function(){
     checkInputValidity(cfmPasswordInput,checkpasswordMatch,"You Should Enter Password Confirm","Password is not matched Yet");
-    // if(cfmPasswordInput.value){
-    //     if(checkpasswordMatch()){
-    //         cfmPasswordInput.classList.add("is-valid");
-    //         cfmPasswordInput.classList.remove("is-invalid");
-    //     }else{
-    //         cfmPasswordInput.nextElementSibling.innerText="Password is not matched Yet";
-    //         cfmPasswordInput.classList.remove("is-valid");
-    //         cfmPasswordInput.classList.add("is-invalid");
-    //     }
-    // }else{
-    //     cfmPasswordInput.nextElementSibling.innerText="You Should Enter Password Confirm";
-    //     cfmPasswordInput.classList.remove("is-valid");
-    //     cfmPasswordInput.classList.add("is-invalid");
-    // }
 })
 cfmPasswordInput.addEventListener("input",function(){
     checkInputValidity(cfmPasswordInput,checkpasswordMatch,"You Should Enter Password Confirm","Password is not matched Yet");
-    // if(cfmPasswordInput.value){
-    //     if(checkpasswordMatch()){
-    //         cfmPasswordInput.classList.add("is-valid");
-    //         cfmPasswordInput.classList.remove("is-invalid");
-    //     }else{
-    //         cfmPasswordInput.nextElementSibling.innerText="Password is not matched Yet";
-    //         cfmPasswordInput.classList.remove("is-valid");
-    //         cfmPasswordInput.classList.add("is-invalid");
-    //     }
-    // }else{
-    //     cfmPasswordInput.nextElementSibling.innerText="You Should Enter Password Confirm";
-    //     cfmPasswordInput.classList.remove("is-valid");
-    //     cfmPasswordInput.classList.add("is-invalid");
-    // }
 })
 
 // Email input Validation
 emailInput.addEventListener("blur",function(){
     checkInputValidity(emailInput,checkEmailValid,"You Should Enter your Email","Not Valid Email");
-    // if(emailInput.value){
-    //     if(checkEmailValid()){
-    //         emailInput.classList.add("is-valid");
-    //         emailInput.classList.remove("is-invalid");
-    //     }else{
-    //         emailInput.nextElementSibling.innerText="Not Valid Email";
-    //         emailInput.classList.remove("is-valid");
-    //         emailInput.classList.add("is-invalid");
-    //     }
-    // }else{
-    //     emailInput.nextElementSibling.innerText="You Should Enter your Email";
-    //     emailInput.classList.remove("is-valid");
-    //     emailInput.classList.add("is-invalid");
-    // }
 })
 emailInput.addEventListener("input",function(){
     checkInputValidity(emailInput,checkEmailValid,"You Should Enter your Email","Not Valid Email");
-    // if(emailInput.value){
-    //     if(checkEmailValid()){
-    //         emailInput.classList.add("is-valid");
-    //         emailInput.classList.remove("is-invalid");
-    //     }else{
-    //         emailInput.nextElementSibling.innerText="Not Valid Email";
-    //         emailInput.classList.remove("is-valid");
-    //         emailInput.classList.add("is-invalid");
-    //     }
-    // }else{
-    //     emailInput.nextElementSibling.innerText="You Should Enter your Email";
-    //     emailInput.classList.remove("is-valid");
-    //     emailInput.classList.add("is-invalid");
-    // }
 })
 
 // Mobile input Validation
 mobileInput.addEventListener("blur",function(){
     checkInputValidity(mobileInput,checkMobileValid,"You Should Enter your Mobile Number","Not Valid Egyptian Number starts with 01 and 11 number");
-    // if(mobileInput.value){
-    //     if(checkMobileValid()){
-    //         mobileInput.classList.add("is-valid");
-    //         mobileInput.classList.remove("is-invalid");
-    //     }else{
-    //         mobileInput.nextElementSibling.innerText="Not Valid Egyptian Number starts with 01 and 11 number";
-    //         mobileInput.classList.remove("is-valid");
-    //         mobileInput.classList.add("is-invalid");
-    //     }
-    // }else{
-    //     mobileInput.nextElementSibling.innerText="You Should Enter your Mobile Number";
-    //     mobileInput.classList.remove("is-valid");
-    //     mobileInput.classList.add("is-invalid");
-    // }
 })
 mobileInput.addEventListener("input",function(){
     checkInputValidity(mobileInput,checkMobileValid,"You Should Enter your Mobile Number","Not Valid Egyptian Number starts with 01 and 11 number");
-    // if(mobileInput.value){
-    //     if(checkMobileValid()){
-    //         mobileInput.classList.add("is-valid");
-    //         mobileInput.classList.remove("is-invalid");
-    //     }else{
-    //         mobileInput.nextElementSibling.innerText="Not Valid Egyptian Number starts with 01 and 11 number";
-    //         mobileInput.classList.remove("is-valid");
-    //         mobileInput.classList.add("is-invalid");
-    //     }
-    // }else{
-    //     mobileInput.nextElementSibling.innerText="You Should Enter your Mobile Number";
-    //     mobileInput.classList.remove("is-valid");
-    //     mobileInput.classList.add("is-invalid");
-    // }
 })
 
 clearInputs();
@@ -336,6 +196,6 @@ registerBtn.addEventListener("click",function(event){
         clearInputs();
         setTimeout(() => {
             window.location="login.html";
-        }, 1000);
+        }, 100);
     }
 })
